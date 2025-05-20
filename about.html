@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Rosario P.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Rosario P logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-me">
+            <h1>About Me</h1>
+            <div class="divider">
+                <hr>
+                <hr class="shorter">
+                <hr>
+                </div>
+            <p>Hello! I'm a 26-year-old Venezuelan with a decade of experience in the restaurant industry. Throughout my career, I've developed a reputation for being a fast learner and hard worker with a keen eye for detail. My strong work ethic has always driven me to go above and beyond in every task I undertake.</p>
+            <p>I bring creativity and passion to everything I do, always striving to deliver exceptional results. Working in the restaurant industry has taught me the importance of teamwork, adaptability, and staying composed under pressure. These experiences have shaped me into a dedicated and innovative professional who thrives in dynamic environments.</p>
+            <p>I am excited to bring my skills and enthusiasm to new challenges and opportunities. Let's collaborate to create something extraordinary together!</p>
+            <div class="buttons">
+                <button id="resumeButton" class="btn">See Resume</button>
+                <button id="contactButton" class="btn">Contact Me</button>
+            </div>
+        </section>
+        <aside>
+            <img src="profile.jpeg" alt="Rosario P. sitting on stone steps" class="profile-pic">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/rosick98/"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/rosario-perez-ux"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </aside>
+    </main>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <span class="close" id="closePopup">&times;</span>
+        <iframe src="publicResume.pdf"></iframe>
+    </div>
+    <div class="popup" id="contactPopup">
+        <span class="close" id="closeContactPopup">&times;</span>
+        <div class="contact-info">
+            <p>Name: Rosario Perez.</p>
+            <p>Ux/Ui Desginer and Developer</p>
+        </div>
+        <form id="contactForm" action="https://formspree.io/f/xnndrlee" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Your Phone (optional):</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>

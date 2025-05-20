@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - Your Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Rosario P logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                 <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="switchButton">
+        <a href="projects.html"><button class="caseStudies">Case Studies</button></a><a href="design.html"><button class="graphicDesign">Graphic Design</button></a>
+    </div>
+    <section id="section2" class="section">
+        <div class="appGif">
+        <img src="logos.gif" alt="Awesome Gif">
+        </div>
+        <div class="scrollDivider">
+            <hr>
+            <div class="arrow left"></div>
+            <div>Scroll Down</div>
+            <div class="arrow"></div>
+                <hr>
+        </div>
+        <div class="projects-grid">
+            
+            <div class="project-item">
+                <div class="project1">
+                <img src="Sticker.png" alt="Project 1">
+                </div>
+                <div class="project-content">
+                <h3>Packaging Sticker, for "Holy Tree Chocolates"</h3>
+                </div>
+            </div>
+            <div class="divider">
+                <hr>
+                <div class="circle"></div>
+                <hr>
+            </div>
+            
+            <div class="project-item">
+                <div class="project2">
+                <img src="kokadas.png" alt="Project 2">
+                </div>
+                <div class="project-content">
+                <h3>La Cocada Logo</h3>
+                </div>
+            </div>
+            <div class="divider">
+                <hr>
+                <div class="circle"></div>
+                <hr>
+            </div>
+            
+            <div class="project-item">
+                <img src="card.png" alt="Project 3">
+                <div class="project-content">
+                <h3>The Smoke Point, Business Card</h3>
+        </div>
+    </div>
+        <div class="divider">
+            <hr>
+            <div class="circle"></div>
+            <hr>
+        </div>
+        <div class="project-item">
+            <img src="bakery.png" alt="Project 3">
+            <div class="project-content">
+            <h3>Isa's Bakery, Logo</h3>
+            </div>
+    </div>
+    </section>
+
+    
+    <div class="footerDivider">
+        <hr>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <button id="contactButton" class="btn">Contact Me</button>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/rosick98/"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/rosario-perez-ux"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="contactPopup">
+        <span class="close" id="closeContactPopup">&times;</span>
+        <div class="contact-info">
+            <p>Name: Rosario Perez.</p>
+            <p>Ux/Ui Desginer and Developer</p>
+        </div>
+        <form id="contactForm" action="https://formspree.io/f/xnndrlee" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Your Phone (optional):</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="design.js"></script>
+</body>
+</html>

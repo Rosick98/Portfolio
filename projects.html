@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - Your Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Rosario P logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                 <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="switchButton">
+        <a href="projects.html"><button class="caseStudies">Case Studies</button></a><a href="design.html"><button class="graphicDesign">Graphic Design</button></a>
+    </div>
+    <section id="section2" class="section">
+        <div class="appGif">
+        <img src="appdisplay.gif" alt="Awesome Gif">
+        </div>
+        <div class="scrollDivider">
+            <hr>
+            <div class="arrow left"></div>
+            <div>Scroll Down</div>
+            <div class="arrow"></div>
+                <hr>
+        </div>
+        <div class="projects-grid">
+            
+            <div class="project-item">
+                <div class="project1">
+                <img src="project1.png" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <div class="image">
+                        <img src="airbnbLogo.png" alt="Airbnb logo">
+                    </div>
+                <h3>Good company is always the best choice</h3>
+                <p>We developed a mockup project for Airbnb, introducing a new feature called 'Travel Buddy' for the app. My primary focus was on designing the user interface, ensuring it was intuitive and user-friendly.</p>
+                <a href="airbnbCs.html"><button>View Case Study</button></a>
+                </div>
+            </div>
+            <div class="divider">
+                <hr>
+                <div class="circle"></div>
+                <hr>
+            </div>
+            
+            <div class="project-item">
+                <div class="project2">
+                <img src="project2.png" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <div class="image">
+                        <img src="personalLogo.png" alt="Rosario logo">
+                    </div>
+                <h3>It really takes a village</h3>
+                <p>I developed an app prototype designed for parents to connect with each other, schedule carpools for their kids, and track their rides. The app aims to make carpooling more convenient and safe for families.</p>
+                <a href="carpoolCs.html"><button>View Case Study</button></a>
+                </div>
+            </div>
+            <div class="divider">
+                <hr>
+                <div class="circle"></div>
+                <hr>
+            </div>
+        <div class="project-item">
+            <div class="project4">
+            <img src="project4.png" alt="Project 4">
+            </div>
+            <div class="project-content">
+                <div class="image">
+                    <img src="fuegoLogo.png" alt="Fuego logo">
+                </div>
+            <h3>“A life line app for immigrant families”</h3>
+            <p>Our team led a mock-up website redesign for an art non-profit organization, incorporating a private messaging feature to enhance community connectivity. My main focus was on redesigning the user interface to ensure an engaging and user-friendly experience.</p>
+            <a href="fuegoCs.html"><button>View Case Study</button></a>
+        </div>
+    </div>
+    </section>
+
+    
+    <div class="footerDivider">
+        <hr>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <button id="contactButton" class="btn">Contact Me</button>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/rosick98/"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/rosario-perez-ux"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="contactPopup">
+        <span class="close" id="closeContactPopup">&times;</span>
+        <div class="contact-info">
+            <p>Name: Rosario Perez.</p>
+            <p>Ux/Ui Desginer and Developer</p>
+        </div>
+        <form id="contactForm" action="https://formspree.io/f/xnndrlee" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Your Phone (optional):</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>

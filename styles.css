@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2B2C3D;
+    color: #E5CDCD;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2B2C3D;
+    border-bottom: 2px solid #E5CDCD;
+    box-shadow: 0px 9px 8.1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+        height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-family: lora;
+    font-size: 24px;
+    text-decoration: none;
+    color: #E5CDCD;
+    transition: background-color 0.3s, transform 0.3s;
+}
+nav ul li a:hover {
+    background-color: #E5CDCD; /* Darker green */
+    color: #2B2C3D;
+    padding: 5px;
+    border-radius: 5px;
+    transform: scale(1.05);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+
+.intro {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 0px;
+    position: relative; /* Set relative position for overlay */
+}
+
+.text {
+    max-width: 50%;
+    position: relative; /* Ensure text is above the image */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.intro h1 {
+    font-family: patua one;
+    font-size: 64px;
+    margin-bottom: 0px;
+    position: relative; /* Add this */
+}
+
+hr {
+    width: 110px;
+    border: 0;
+    height: 1px;
+    background: #E5CDCD;
+    margin: 3px 0;
+}
+.shorter{
+    width: 55px;
+}
+
+.intro p {
+    font-family: lora;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.intro button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #2B2C3D;
+    color: #E5CDCD;
+    border: solid 2px #E5CDCD;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.intro button:hover {
+        background-color: #E5CDCD; /* Darker green */
+        color: #2B2C3D;
+
+}
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border: 2px solid #E5CDCD;
+    background-color: #2B2C3D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.popup iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* Style for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.contact-info {
+    padding: 10px;
+    font-family: lora;
+    font-size: 20px;
+}
+
+form {
+    font-family: lora;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: lora;
+    font-size: 20px;
+    background-color: #2B2C3D;
+    color: #E5CDCD;
+    border: solid 2px #E5CDCD;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+}
+form button:hover {
+    background-color: #E5CDCD; 
+    color: #2B2C3D;
+    transform: scale(1.02);
+
+}
+
+.photo img {
+    width: 300px;
+    height: 450px;
+    position: relative; /* Ensure proper positioning */
+    z-index: 0; /* Ensure it appears behind the text */
+}
+
+.social a {
+    margin: 0 10px 0 0;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
